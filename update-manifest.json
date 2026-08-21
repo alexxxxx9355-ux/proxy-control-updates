@@ -2,16 +2,16 @@
   "payload": {
     "schemaVersion": 1,
     "channel": "stable",
-    "publishedAt": "2026-08-21T23:20:00Z",
+    "publishedAt": "2026-08-21T23:30:00Z",
     "extension": {
-      "version": "0.8.67.0",
+      "version": "0.8.68.0",
       "minChrome": 120,
       "schemaVersion": 8,
       "compatibility": {
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Добавлен read-only Asset Verification: подписанный manifest привязывает per-platform asset catalog по HTTPS URL, точному размеру и SHA-256. Каталог строго проверяется и строит download plan без скачивания/установки пакетов; Bridge/Guard в стандартном catalog запрещены."
+      "releaseNotes": "Добавлен Safe Package Download / Verify-only: Xray-core, sing-box и PSL можно скачать только в память и проверить по подписанным catalog metadata + SHA-256. Файл после проверки не сохраняется и ничего не устанавливается/не заменяется."
     },
     "bridge": {
       "version": "0.8.28",
@@ -20,42 +20,42 @@
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Bridge 0.8.28 и Strict Guard не менялись; переустановка не требуется."
+      "releaseNotes": "Bridge 0.8.28 и Strict Guard не менялись; package verify не обновляет native и не требует переустановки."
     },
     "xray": {
       "version": "26.7.28",
       "compatibility": {
         "minBridge": "0.8.28"
       },
-      "releaseNotes": "Текущая закреплённая версия Xray-core для Bridge 0.8.28; package download в 0.8.67.0 не запускается."
+      "releaseNotes": "Xray-core 26.7.28: Windows x64 official release package доступен для ручного verify-only; SHA-256 совпадает с digest, уже закреплённым в Bridge 0.8.28. Установка/замена не запускается."
     },
     "singbox": {
       "version": "1.13.19",
       "compatibility": {
         "minBridge": "0.8.28"
       },
-      "releaseNotes": "Текущая закреплённая версия sing-box для Bridge 0.8.28; package download в 0.8.67.0 не запускается."
+      "releaseNotes": "sing-box 1.13.19: Windows x64 official release package доступен для ручного verify-only; SHA-256 совпадает с digest, уже закреплённым в Bridge 0.8.28. Установка/замена не запускается."
     },
     "psl": {
       "version": "2026.8.17",
       "compatibility": {
         "minExtension": "0.8.40"
       },
-      "releaseNotes": "PSL 2026.8.17: в Windows x64 asset catalog опубликованы проверяемые URL/размер/SHA-256 метаданные; сам файл пока не скачивается."
+      "releaseNotes": "PSL 2026.8.17: пакет можно вручную скачать в память и проверить по точному размеру + SHA-256; после проверки файл не сохраняется и активная PSL не меняется."
     },
     "critical": false,
     "security": false,
     "assets": {
       "windows-x64": {
         "url": "https://api.github.com/repos/alexxxxx9355-ux/proxy-control-updates/contents/asset-catalog-windows-x64.json?ref=main",
-        "sha256": "4443187944612869fdef91aa701a4629a37fa9bdaf744957ed2b5a9d1817a322",
-        "size": 507
+        "sha256": "7ac1d3151bac2c291efd9fda496e82fbb2fd70b34bf67f19779f839abbe01d78",
+        "size": 1260
       }
     }
   },
   "signature": {
     "algorithm": "ECDSA-P256-SHA256",
     "keyId": "pc-p256-71c8797b4134",
-    "value": "-I94LKqcZcHeGpYqG_jr-tj7ANkxUT-PoWsDqz5-IPwjl1Pz64jDDczCba1-vti0OJClXa6gIVO7hWDsyh4hrg"
+    "value": "NZWZHLLS60eATX7UAVNTl1LnFLnFteAgPi1Jd3ZRZA83Bbk5fvJ7_N4VyCf9USIQY9GwhrBhB87I6O9nZEGsrQ"
   }
 }
