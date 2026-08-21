@@ -2,16 +2,16 @@
   "payload": {
     "schemaVersion": 1,
     "channel": "stable",
-    "publishedAt": "2026-08-21T23:03:00Z",
+    "publishedAt": "2026-08-21T23:20:00Z",
     "extension": {
-      "version": "0.8.66.4",
+      "version": "0.8.67.0",
       "minChrome": 120,
       "schemaVersion": 8,
       "compatibility": {
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Центр обновлений переведён с raw.githubusercontent.com на GitHub Contents API, чтобы исключить устаревшие CDN-ответы branch-файла. Подпись ECDSA, read-only policy и native-часть не менялись."
+      "releaseNotes": "Добавлен read-only Asset Verification: подписанный manifest привязывает per-platform asset catalog по HTTPS URL, точному размеру и SHA-256. Каталог строго проверяется и строит download plan без скачивания/установки пакетов; Bridge/Guard в стандартном catalog запрещены."
     },
     "bridge": {
       "version": "0.8.28",
@@ -27,28 +27,35 @@
       "compatibility": {
         "minBridge": "0.8.28"
       },
-      "releaseNotes": "Текущая закреплённая версия Xray-core для Bridge 0.8.28."
+      "releaseNotes": "Текущая закреплённая версия Xray-core для Bridge 0.8.28; package download в 0.8.67.0 не запускается."
     },
     "singbox": {
       "version": "1.13.19",
       "compatibility": {
         "minBridge": "0.8.28"
       },
-      "releaseNotes": "Текущая закреплённая версия sing-box для Bridge 0.8.28."
+      "releaseNotes": "Текущая закреплённая версия sing-box для Bridge 0.8.28; package download в 0.8.67.0 не запускается."
     },
     "psl": {
       "version": "2026.8.17",
       "compatibility": {
         "minExtension": "0.8.40"
       },
-      "releaseNotes": "Встроенный снимок Public Suffix List от 2026-08-17."
+      "releaseNotes": "PSL 2026.8.17: в Windows x64 asset catalog опубликованы проверяемые URL/размер/SHA-256 метаданные; сам файл пока не скачивается."
     },
     "critical": false,
-    "security": false
+    "security": false,
+    "assets": {
+      "windows-x64": {
+        "url": "https://api.github.com/repos/alexxxxx9355-ux/proxy-control-updates/contents/asset-catalog-windows-x64.json?ref=main",
+        "sha256": "4443187944612869fdef91aa701a4629a37fa9bdaf744957ed2b5a9d1817a322",
+        "size": 507
+      }
+    }
   },
   "signature": {
     "algorithm": "ECDSA-P256-SHA256",
     "keyId": "pc-p256-71c8797b4134",
-    "value": "NEPq5ksq27PW4Jox7dnrB8ppxX-m1PU3l84-IJiChETjQ6xtOzFT-2aMpa0oWHrmf5V6Y31196sz594hssGvZw"
+    "value": "-I94LKqcZcHeGpYqG_jr-tj7ANkxUT-PoWsDqz5-IPwjl1Pz64jDDczCba1-vti0OJClXa6gIVO7hWDsyh4hrg"
   }
 }
