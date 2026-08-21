@@ -2,16 +2,16 @@
   "payload": {
     "schemaVersion": 1,
     "channel": "stable",
-    "publishedAt": "2026-08-21T23:30:00Z",
+    "publishedAt": "2026-08-21T23:44:00Z",
     "extension": {
-      "version": "0.8.68.0",
+      "version": "0.8.68.1",
       "minChrome": 120,
       "schemaVersion": 8,
       "compatibility": {
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Добавлен Safe Package Download / Verify-only: Xray-core, sing-box и PSL можно скачать только в память и проверить по подписанным catalog metadata + SHA-256. Файл после проверки не сохраняется и ничего не устанавливается/не заменяется."
+      "releaseNotes": "Исправлены PSL verify-only metadata: pinned upstream payload не содержит локальные VERSION/COMMIT строки Proxy Control и имеет 333040 байт. Catalog теперь связывает фактически скачиваемый файл с exact size 333040 и SHA-256 7a62213f3e70…; fail-closed проверка не ослаблялась."
     },
     "bridge": {
       "version": "0.8.28",
@@ -41,14 +41,14 @@
       "compatibility": {
         "minExtension": "0.8.40"
       },
-      "releaseNotes": "PSL 2026.8.17: пакет можно вручную скачать в память и проверить по точному размеру + SHA-256; после проверки файл не сохраняется и активная PSL не меняется."
+      "releaseNotes": "PSL 2026.8.17 verify-only: исправлены exact remote size/SHA-256 для pinned upstream payload. Встроенная PSL не менялась и файл после проверки по-прежнему не сохраняется."
     },
     "critical": false,
     "security": false,
     "assets": {
       "windows-x64": {
         "url": "https://api.github.com/repos/alexxxxx9355-ux/proxy-control-updates/contents/asset-catalog-windows-x64.json?ref=main",
-        "sha256": "7ac1d3151bac2c291efd9fda496e82fbb2fd70b34bf67f19779f839abbe01d78",
+        "sha256": "0065674f5def5483263351dc35c27bff00846250b0d67793d1d502c008dd34c7",
         "size": 1260
       }
     }
@@ -56,6 +56,6 @@
   "signature": {
     "algorithm": "ECDSA-P256-SHA256",
     "keyId": "pc-p256-71c8797b4134",
-    "value": "NZWZHLLS60eATX7UAVNTl1LnFLnFteAgPi1Jd3ZRZA83Bbk5fvJ7_N4VyCf9USIQY9GwhrBhB87I6O9nZEGsrQ"
+    "value": "Yd52pfb6mzNJ76nsNilGol4cEydeuqCQ7FBxHbBcPfCtxCDNJqU42e6EE6Gk-P6VxwnnDIxIyiyWmnFb1sDyhA"
   }
 }
