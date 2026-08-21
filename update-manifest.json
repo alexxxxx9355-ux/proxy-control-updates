@@ -2,16 +2,16 @@
   "payload": {
     "schemaVersion": 1,
     "channel": "stable",
-    "publishedAt": "2026-08-21T22:42:00Z",
+    "publishedAt": "2026-08-21T22:52:00Z",
     "extension": {
-      "version": "0.8.66.2",
+      "version": "0.8.66.3",
       "minChrome": 120,
       "schemaVersion": 8,
       "compatibility": {
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Исправлено отображение Strict Guard в Центре обновлений: быстрый статус больше не затирает последнее подтверждённое покрытие значением unchecked."
+      "releaseNotes": "Исправлена ручная проверка manifest: запрос теперь идёт с cache-buster и fetch no-store, чтобы Центр обновлений не показывал устаревший raw GitHub manifest из кеша."
     },
     "bridge": {
       "version": "0.8.28",
@@ -49,6 +49,6 @@
   "signature": {
     "algorithm": "ECDSA-P256-SHA256",
     "keyId": "pc-p256-71c8797b4134",
-    "value": "8w7Og6FwTeQAHfEkQ88OLbLkLBcwYIgRWEJ3Ss0dV1e_15YsEMtzW3P2Cg9yv68wrHnRNo-npQmu_qFFOmxnRA"
+    "value": "rbedyZwllvzQyyH1efwhmhWAxjPw4Umda8pcVfVTAivVtRvmganMLESFse4kL3h_iKdywKUtTBOeSMnrQLlqfg"
   }
 }
