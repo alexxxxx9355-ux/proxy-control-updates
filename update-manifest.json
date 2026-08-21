@@ -1,0 +1,54 @@
+{
+  "payload": {
+    "schemaVersion": 1,
+    "channel": "stable",
+    "publishedAt": "2026-08-21T22:35:00Z",
+    "extension": {
+      "version": "0.8.66.1",
+      "minChrome": 120,
+      "schemaVersion": 8,
+      "compatibility": {
+        "minSchema": 8,
+        "maxSchema": 8
+      },
+      "releaseNotes": "Trusted manifest source moved to the dedicated public proxy-control-updates repository. Signing key and read-only security model are unchanged."
+    },
+    "bridge": {
+      "version": "0.8.28",
+      "compatibility": {
+        "minExtension": "0.8.64.2",
+        "minSchema": 8,
+        "maxSchema": 8
+      },
+      "releaseNotes": "Bridge 0.8.28 and Strict Guard are unchanged; reinstall is not required."
+    },
+    "xray": {
+      "version": "26.7.28",
+      "compatibility": {
+        "minBridge": "0.8.28"
+      },
+      "releaseNotes": "Pinned Xray-core version used by Bridge 0.8.28."
+    },
+    "singbox": {
+      "version": "1.13.19",
+      "compatibility": {
+        "minBridge": "0.8.28"
+      },
+      "releaseNotes": "Pinned sing-box version used by Bridge 0.8.28."
+    },
+    "psl": {
+      "version": "2026.8.17",
+      "compatibility": {
+        "minExtension": "0.8.40"
+      },
+      "releaseNotes": "Bundled Public Suffix List snapshot 2026-08-17."
+    },
+    "critical": false,
+    "security": false
+  },
+  "signature": {
+    "algorithm": "ECDSA-P256-SHA256",
+    "keyId": "pc-p256-71c8797b4134",
+    "value": "q5ipgEknqTdrNiPilnRzaPtyChJDwC6pDaCNvP1pcA6RPK8yAk4cSkm3Gq9z_6j45xsoIsoo1GRbg3Ou1bhPkA"
+  }
+}
