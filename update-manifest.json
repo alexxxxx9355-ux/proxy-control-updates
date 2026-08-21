@@ -2,16 +2,16 @@
   "payload": {
     "schemaVersion": 1,
     "channel": "stable",
-    "publishedAt": "2026-08-21T22:35:00Z",
+    "publishedAt": "2026-08-21T22:42:00Z",
     "extension": {
-      "version": "0.8.66.1",
+      "version": "0.8.66.2",
       "minChrome": 120,
       "schemaVersion": 8,
       "compatibility": {
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Trusted manifest source moved to the dedicated public proxy-control-updates repository. Signing key and read-only security model are unchanged."
+      "releaseNotes": "Исправлено отображение Strict Guard в Центре обновлений: быстрый статус больше не затирает последнее подтверждённое покрытие значением unchecked."
     },
     "bridge": {
       "version": "0.8.28",
@@ -20,28 +20,28 @@
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Bridge 0.8.28 and Strict Guard are unchanged; reinstall is not required."
+      "releaseNotes": "Bridge 0.8.28 и Strict Guard не менялись; переустановка не требуется."
     },
     "xray": {
       "version": "26.7.28",
       "compatibility": {
         "minBridge": "0.8.28"
       },
-      "releaseNotes": "Pinned Xray-core version used by Bridge 0.8.28."
+      "releaseNotes": "Текущая закреплённая версия Xray-core для Bridge 0.8.28."
     },
     "singbox": {
       "version": "1.13.19",
       "compatibility": {
         "minBridge": "0.8.28"
       },
-      "releaseNotes": "Pinned sing-box version used by Bridge 0.8.28."
+      "releaseNotes": "Текущая закреплённая версия sing-box для Bridge 0.8.28."
     },
     "psl": {
       "version": "2026.8.17",
       "compatibility": {
         "minExtension": "0.8.40"
       },
-      "releaseNotes": "Bundled Public Suffix List snapshot 2026-08-17."
+      "releaseNotes": "Встроенный снимок Public Suffix List от 2026-08-17."
     },
     "critical": false,
     "security": false
@@ -49,6 +49,6 @@
   "signature": {
     "algorithm": "ECDSA-P256-SHA256",
     "keyId": "pc-p256-71c8797b4134",
-    "value": "q5ipgEknqTdrNiPilnRzaPtyChJDwC6pDaCNvP1pcA6RPK8yAk4cSkm3Gq9z_6j45xsoIsoo1GRbg3Ou1bhPkA"
+    "value": "8w7Og6FwTeQAHfEkQ88OLbLkLBcwYIgRWEJ3Ss0dV1e_15YsEMtzW3P2Cg9yv68wrHnRNo-npQmu_qFFOmxnRA"
   }
 }
