@@ -2,16 +2,16 @@
   "payload": {
     "schemaVersion": 1,
     "channel": "stable",
-    "publishedAt": "2026-08-21T22:52:00Z",
+    "publishedAt": "2026-08-21T23:03:00Z",
     "extension": {
-      "version": "0.8.66.3",
+      "version": "0.8.66.4",
       "minChrome": 120,
       "schemaVersion": 8,
       "compatibility": {
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Исправлена ручная проверка manifest: запрос теперь идёт с cache-buster и fetch no-store, чтобы Центр обновлений не показывал устаревший raw GitHub manifest из кеша."
+      "releaseNotes": "Центр обновлений переведён с raw.githubusercontent.com на GitHub Contents API, чтобы исключить устаревшие CDN-ответы branch-файла. Подпись ECDSA, read-only policy и native-часть не менялись."
     },
     "bridge": {
       "version": "0.8.28",
@@ -49,6 +49,6 @@
   "signature": {
     "algorithm": "ECDSA-P256-SHA256",
     "keyId": "pc-p256-71c8797b4134",
-    "value": "rbedyZwllvzQyyH1efwhmhWAxjPw4Umda8pcVfVTAivVtRvmganMLESFse4kL3h_iKdywKUtTBOeSMnrQLlqfg"
+    "value": "WNuqbRhuQ7JXO_V8hB4EZfXoSuBTQjZMPoJoXBMUyFhGpOyRhHBMiXdTezX0jlNhTiRc0CguTsRgHoF9bw3CHA"
   }
 }
