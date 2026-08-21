@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "platform": "windows-x64",
+  "generatedAt": "2026-08-21T23:18:00Z",
+  "items": [
+    {
+      "component": "psl",
+      "version": "2026.8.17",
+      "kind": "data",
+      "url": "https://raw.githubusercontent.com/publicsuffix/list/fe5aa073ba579b9d5ae92958b63a7d1de8c13e3a/public_suffix_list.dat",
+      "sha256": "3849ae81e6d7daf04ea985b9323570b2c2d4fd1c6b580aa421e163d613e8611a",
+      "size": 333129,
+      "compatibility": {
+        "minExtension": "0.8.40"
+      }
+    }
+  ]
+}
