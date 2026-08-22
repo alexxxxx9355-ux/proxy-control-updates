@@ -2,16 +2,16 @@
   "payload": {
     "schemaVersion": 1,
     "channel": "stable",
-    "publishedAt": "2026-08-22T08:41:00Z",
+    "publishedAt": "2026-08-22T08:54:00Z",
     "extension": {
-      "version": "0.8.73.0",
+      "version": "0.8.74.0",
       "minChrome": 120,
       "schemaVersion": 8,
       "compatibility": {
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Live Icon Cadence Polish: после ручной смены профиля toolbar сохраняет три flip-цикла, но пауза между ними увеличена с 500 до 900 мс. Скорость flip, hold, периодическая live-icon animation, country/protocol hardening и controlled update logic не менялись; native не менялся."
+      "releaseNotes": "Manual Flip Reliability: согласованные три toolbar flip-цикла после ручной смены профиля больше не обрываются фоновым same-route diagnostic/page-complete repaint. Новая routing generation, tab activation и warning/error/checking/network-outage остаются приоритетными и немедленно отменяют декоративную анимацию. Native не менялся."
     },
     "bridge": {
       "version": "0.8.29",
@@ -20,7 +20,7 @@
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Bridge 0.8.29 и Strict Guard не менялись относительно 0.8.72.0; 0.8.73.0 — extension-only timing polish, переустановка Bridge/Guard не требуется."
+      "releaseNotes": "Bridge 0.8.29 и Strict Guard не менялись относительно 0.8.73.0; 0.8.74.0 — extension-only live-icon arbitration fix, переустановка Bridge/Guard не требуется."
     },
     "xray": {
       "version": "26.7.28",
@@ -56,6 +56,6 @@
   "signature": {
     "algorithm": "ECDSA-P256-SHA256",
     "keyId": "pc-p256-71c8797b4134",
-    "value": "CDXz8Obc6TE3cm4xaWJC8e4fVQXo2B0qV2SY-PfofEIJcwGgPX-S3Hebsi1xmk2UuJci6zb7VLXHf0T1-vvXOg"
+    "value": "Su-GWKC-hno936hPtZ-JjA7GqSyqhWktAbrmyXMhctg5pNOBWOw8Ti1WwKxQRtP6lyX8zbNkGfLcZe7H_0FS1A"
   }
 }
