@@ -2,16 +2,16 @@
   "payload": {
     "schemaVersion": 1,
     "channel": "stable",
-    "publishedAt": "2026-08-21T23:58:00Z",
+    "publishedAt": "2026-08-22T00:12:00Z",
     "extension": {
-      "version": "0.8.69.0",
+      "version": "0.8.70.0",
       "minChrome": 120,
       "schemaVersion": 8,
       "compatibility": {
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Добавлен Safe Install Staging: после SHA-256 verify Xray/sing-box/PSL проходят content policy и могут получить metadata-only план «готов к установке». Пакет не сохраняется, activation остаётся отключённой; rollback/self-test обязательны для будущей установки."
+      "releaseNotes": "Упрощён Центр обновлений под one-click UX: после проверки все реальные совместимые Xray/sing-box/PSL обновления собираются под одной кнопкой «Обновить всё». Текущие версии не предлагают no-op staging; инженерная кнопка «Подготовить» убрана из обычного UI. В 0.8.70.0 bulk-flow пока выполняет безопасный verify/content-policy/staging preflight без активной замены компонентов."
     },
     "bridge": {
       "version": "0.8.28",
@@ -20,28 +20,28 @@
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Bridge 0.8.28 и Strict Guard не менялись; staging не обновляет native и не требует переустановки."
+      "releaseNotes": "Bridge 0.8.28 и Strict Guard не менялись; one-click UX foundation не обновляет native и не требует переустановки."
     },
     "xray": {
       "version": "26.7.28",
       "compatibility": {
         "minBridge": "0.8.28"
       },
-      "releaseNotes": "Xray-core 26.7.28: verify-only дополнен archive content policy и metadata-only staging plan. Установка/замена/перезапуск не запускаются."
+      "releaseNotes": "Xray-core 26.7.28 актуален. При появлении более новой совместимой версии она попадёт в общий one-click update plan; no-op для уже установленной версии запрещён."
     },
     "singbox": {
       "version": "1.13.19",
       "compatibility": {
         "minBridge": "0.8.28"
       },
-      "releaseNotes": "sing-box 1.13.19: verify-only дополнен archive content policy и metadata-only staging plan. Установка/замена/перезапуск не запускаются."
+      "releaseNotes": "sing-box 1.13.19 актуален. При появлении более новой совместимой версии она попадёт в общий one-click update plan; no-op для уже установленной версии запрещён."
     },
     "psl": {
       "version": "2026.8.17",
       "compatibility": {
         "minExtension": "0.8.40"
       },
-      "releaseNotes": "PSL 2026.8.17: verify-only дополнен UTF-8/ICANN/PRIVATE content policy и metadata-only staging plan; активная PSL не меняется."
+      "releaseNotes": "PSL 2026.8.17 актуален. При появлении более новой совместимой версии она попадёт в общий one-click update plan; текущая версия не предлагает лишних действий."
     },
     "critical": false,
     "security": false,
@@ -56,6 +56,6 @@
   "signature": {
     "algorithm": "ECDSA-P256-SHA256",
     "keyId": "pc-p256-71c8797b4134",
-    "value": "pq2gMO4vtQs21QQk-MrBjNcjSG6K_GVLclrauvEoUklN1oS9gGT8W3doqeWNbYG6xyxVDmS6c-Uu_1WVSuiEnA"
+    "value": "ACXYG30HZss15EP--fSphRa4ld9lM7S89T4IvqdhgPeAkcikEo6YuWVFDl1CGx35AUJ6SYT9-JRH5ygOw_vPAw"
   }
 }
