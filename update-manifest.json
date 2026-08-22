@@ -2,16 +2,16 @@
   "payload": {
     "schemaVersion": 1,
     "channel": "stable",
-    "publishedAt": "2026-08-22T09:29:00Z",
+    "publishedAt": "2026-08-22T09:38:00Z",
     "extension": {
-      "version": "0.8.76.0",
+      "version": "0.8.76.1",
       "minChrome": 120,
       "schemaVersion": 8,
       "compatibility": {
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Background Verified Snapshot Sync: фоновая и ручная проверка теперь сохраняют один и тот же validated snapshot signed manifest + integrity-bound asset catalog. Options сразу восстанавливает из него полноценные доступные версии/статусы без повторного ручного запроса; snapshot повторно привязывается к текущим локальным версиям, поэтому stale/no-op update plan не появляется. Popup не показывает устаревший extension-only notice после уже установленной версии. Native не менялся."
+      "releaseNotes": "Update Notice Deep-Link Fix: сохранён Background Verified Snapshot Sync из 0.8.76.0; клик по баннеру «Доступно обновление» в popup теперь открывает Центр обновлений сразу на вкладке «Обновления», а не на главной «Профили». Native не менялся."
     },
     "bridge": {
       "version": "0.8.29",
@@ -20,7 +20,7 @@
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Bridge 0.8.29 и Strict Guard не менялись относительно 0.8.75.0; 0.8.76.0 — extension-only verified snapshot/UI sync, переустановка Bridge/Guard не требуется."
+      "releaseNotes": "Bridge 0.8.29 и Strict Guard не менялись относительно 0.8.75.0; 0.8.76.1 — extension-only Update Center snapshot/deep-link fix, переустановка Bridge/Guard не требуется."
     },
     "xray": {
       "version": "26.7.28",
@@ -56,6 +56,6 @@
   "signature": {
     "algorithm": "ECDSA-P256-SHA256",
     "keyId": "pc-p256-71c8797b4134",
-    "value": "mifv0DF1tlwFTyBYIAftbPTGZogHfeD8-uhqlqO83nc8jtXwv4qNHMYAqLd3vp4j-T-3aCMB_Vke2cONC0gmiQ"
+    "value": "7ZmQuZa4O0Wl95s6YQMnLrXfUxjEESCkfi9DDgUXHyl3KsCmHVKOYgb1s4TJWRR4-gI9OIZofTCkw9dUvXQOQQ"
   }
 }
