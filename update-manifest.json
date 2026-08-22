@@ -2,16 +2,16 @@
   "payload": {
     "schemaVersion": 1,
     "channel": "stable",
-    "publishedAt": "2026-08-22T08:26:00Z",
+    "publishedAt": "2026-08-22T08:41:00Z",
     "extension": {
-      "version": "0.8.72.0",
+      "version": "0.8.73.0",
       "minChrome": 120,
       "schemaVersion": 8,
       "compatibility": {
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Live UI/State Hardening: tunnel protocol shorthand (VL/VM/TR и т.п.) больше не используется как country/toolbar code; popup показывает имя + полный protocol badge, toolbar использует verified/inferred country или neutral PX. Во время контролируемого Bridge installer restart временный Native host exit отображается как «Bridge обновляется…» с сохранением последнего подтверждённого Guard verdict до успеха/таймаута. Native не менялся."
+      "releaseNotes": "Live Icon Cadence Polish: после ручной смены профиля toolbar сохраняет три flip-цикла, но пауза между ними увеличена с 500 до 900 мс. Скорость flip, hold, периодическая live-icon animation, country/protocol hardening и controlled update logic не менялись; native не менялся."
     },
     "bridge": {
       "version": "0.8.29",
@@ -20,7 +20,7 @@
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Bridge 0.8.29 и Strict Guard не менялись относительно 0.8.71.0; 0.8.72.0 — extension/UI-only patch, переустановка Bridge/Guard не требуется."
+      "releaseNotes": "Bridge 0.8.29 и Strict Guard не менялись относительно 0.8.72.0; 0.8.73.0 — extension-only timing polish, переустановка Bridge/Guard не требуется."
     },
     "xray": {
       "version": "26.7.28",
@@ -56,6 +56,6 @@
   "signature": {
     "algorithm": "ECDSA-P256-SHA256",
     "keyId": "pc-p256-71c8797b4134",
-    "value": "2mCjnd1hhhIxuU7myKA-1aCYVPh5TffSTud-rLP2Cb3hfYjkm_uc9dudi6dhZ8FRwklQGjszBHdLTmU1b07k9w"
+    "value": "CDXz8Obc6TE3cm4xaWJC8e4fVQXo2B0qV2SY-PfofEIJcwGgPX-S3Hebsi1xmk2UuJci6zb7VLXHf0T1-vvXOg"
   }
 }
