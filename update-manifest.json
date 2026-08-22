@@ -2,16 +2,16 @@
   "payload": {
     "schemaVersion": 1,
     "channel": "stable",
-    "publishedAt": "2026-08-22T08:54:00Z",
+    "publishedAt": "2026-08-22T08:58:00Z",
     "extension": {
-      "version": "0.8.74.0",
+      "version": "0.8.75.0",
       "minChrome": 120,
       "schemaVersion": 8,
       "compatibility": {
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Manual Flip Reliability: согласованные три toolbar flip-цикла после ручной смены профиля больше не обрываются фоновым same-route diagnostic/page-complete repaint. Новая routing generation, tab activation и warning/error/checking/network-outage остаются приоритетными и немедленно отменяют декоративную анимацию. Native не менялся."
+      "releaseNotes": "Background Update Notice: metadata-only auto-check запускается через 2 минуты после старта и затем каждые 6 часов. Фоновый путь проверяет только signed manifest + integrity-bound asset catalog, ничего не устанавливает и не скачивает core-пакеты. При наличии новой версии popup показывает компактный banner, а в Options у раздела «Обновления» появляется индикатор. Native не менялся."
     },
     "bridge": {
       "version": "0.8.29",
@@ -20,7 +20,7 @@
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Bridge 0.8.29 и Strict Guard не менялись относительно 0.8.73.0; 0.8.74.0 — extension-only live-icon arbitration fix, переустановка Bridge/Guard не требуется."
+      "releaseNotes": "Bridge 0.8.29 и Strict Guard не менялись относительно 0.8.74.0; 0.8.75.0 — extension-only background update notification polish, переустановка Bridge/Guard не требуется."
     },
     "xray": {
       "version": "26.7.28",
@@ -56,6 +56,6 @@
   "signature": {
     "algorithm": "ECDSA-P256-SHA256",
     "keyId": "pc-p256-71c8797b4134",
-    "value": "Su-GWKC-hno936hPtZ-JjA7GqSyqhWktAbrmyXMhctg5pNOBWOw8Ti1WwKxQRtP6lyX8zbNkGfLcZe7H_0FS1A"
+    "value": "c9-N5wEKwcrkg68zHByyJy44HUx5AREWBeUbRSYfNFLzd0To3OvkLy0rRHMSbuDd9fFn8Ls3eYX9bXkFmAgrPw"
   }
 }
