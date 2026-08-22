@@ -2,16 +2,16 @@
   "payload": {
     "schemaVersion": 1,
     "channel": "stable",
-    "publishedAt": "2026-08-21T23:44:00Z",
+    "publishedAt": "2026-08-21T23:58:00Z",
     "extension": {
-      "version": "0.8.68.1",
+      "version": "0.8.69.0",
       "minChrome": 120,
       "schemaVersion": 8,
       "compatibility": {
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Исправлены PSL verify-only metadata: pinned upstream payload не содержит локальные VERSION/COMMIT строки Proxy Control и имеет 333040 байт. Catalog теперь связывает фактически скачиваемый файл с exact size 333040 и SHA-256 7a62213f3e70…; fail-closed проверка не ослаблялась."
+      "releaseNotes": "Добавлен Safe Install Staging: после SHA-256 verify Xray/sing-box/PSL проходят content policy и могут получить metadata-only план «готов к установке». Пакет не сохраняется, activation остаётся отключённой; rollback/self-test обязательны для будущей установки."
     },
     "bridge": {
       "version": "0.8.28",
@@ -20,28 +20,28 @@
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Bridge 0.8.28 и Strict Guard не менялись; package verify не обновляет native и не требует переустановки."
+      "releaseNotes": "Bridge 0.8.28 и Strict Guard не менялись; staging не обновляет native и не требует переустановки."
     },
     "xray": {
       "version": "26.7.28",
       "compatibility": {
         "minBridge": "0.8.28"
       },
-      "releaseNotes": "Xray-core 26.7.28: Windows x64 official release package доступен для ручного verify-only; SHA-256 совпадает с digest, уже закреплённым в Bridge 0.8.28. Установка/замена не запускается."
+      "releaseNotes": "Xray-core 26.7.28: verify-only дополнен archive content policy и metadata-only staging plan. Установка/замена/перезапуск не запускаются."
     },
     "singbox": {
       "version": "1.13.19",
       "compatibility": {
         "minBridge": "0.8.28"
       },
-      "releaseNotes": "sing-box 1.13.19: Windows x64 official release package доступен для ручного verify-only; SHA-256 совпадает с digest, уже закреплённым в Bridge 0.8.28. Установка/замена не запускается."
+      "releaseNotes": "sing-box 1.13.19: verify-only дополнен archive content policy и metadata-only staging plan. Установка/замена/перезапуск не запускаются."
     },
     "psl": {
       "version": "2026.8.17",
       "compatibility": {
         "minExtension": "0.8.40"
       },
-      "releaseNotes": "PSL 2026.8.17 verify-only: исправлены exact remote size/SHA-256 для pinned upstream payload. Встроенная PSL не менялась и файл после проверки по-прежнему не сохраняется."
+      "releaseNotes": "PSL 2026.8.17: verify-only дополнен UTF-8/ICANN/PRIVATE content policy и metadata-only staging plan; активная PSL не меняется."
     },
     "critical": false,
     "security": false,
@@ -56,6 +56,6 @@
   "signature": {
     "algorithm": "ECDSA-P256-SHA256",
     "keyId": "pc-p256-71c8797b4134",
-    "value": "Yd52pfb6mzNJ76nsNilGol4cEydeuqCQ7FBxHbBcPfCtxCDNJqU42e6EE6Gk-P6VxwnnDIxIyiyWmnFb1sDyhA"
+    "value": "pq2gMO4vtQs21QQk-MrBjNcjSG6K_GVLclrauvEoUklN1oS9gGT8W3doqeWNbYG6xyxVDmS6c-Uu_1WVSuiEnA"
   }
 }
