@@ -2,16 +2,16 @@
   "payload": {
     "schemaVersion": 1,
     "channel": "stable",
-    "publishedAt": "2026-08-22T00:36:00Z",
+    "publishedAt": "2026-08-22T08:26:00Z",
     "extension": {
-      "version": "0.8.71.0",
+      "version": "0.8.72.0",
       "minChrome": 120,
       "schemaVersion": 8,
       "compatibility": {
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Включён Controlled One-Click Install: «Обновить всё» реально устанавливает более новые совместимые Xray/sing-box/PSL. Core update проходит через Bridge transaction API: official URL + SHA-256 + staging/self-test + stop/fail-closed + atomic commit + post-start self-test + rollback. PSL хранится как проверенный локальный override. Bridge/Strict Guard не входят в bulk-update."
+      "releaseNotes": "Live UI/State Hardening: tunnel protocol shorthand (VL/VM/TR и т.п.) больше не используется как country/toolbar code; popup показывает имя + полный protocol badge, toolbar использует verified/inferred country или neutral PX. Во время контролируемого Bridge installer restart временный Native host exit отображается как «Bridge обновляется…» с сохранением последнего подтверждённого Guard verdict до успеха/таймаута. Native не менялся."
     },
     "bridge": {
       "version": "0.8.29",
@@ -20,7 +20,7 @@
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Bridge 0.8.29 добавляет только Core Update API для Xray/sing-box с prepare/commit/self-test/rollback/finalize. Strict Guard protocol/rules/helper не менялись; существующий Guard helper при переустановке Bridge сохраняется."
+      "releaseNotes": "Bridge 0.8.29 и Strict Guard не менялись относительно 0.8.71.0; 0.8.72.0 — extension/UI-only patch, переустановка Bridge/Guard не требуется."
     },
     "xray": {
       "version": "26.7.28",
@@ -56,6 +56,6 @@
   "signature": {
     "algorithm": "ECDSA-P256-SHA256",
     "keyId": "pc-p256-71c8797b4134",
-    "value": "ISXF8LCNfNV_UrVXjSMf6l7U_AlDEAN3onihCyX8DpPc0YV7N2FinyHwZXkcGkRX-p6iaQ04Em2_WJ40OJb87Q"
+    "value": "2mCjnd1hhhIxuU7myKA-1aCYVPh5TffSTud-rLP2Cb3hfYjkm_uc9dudi6dhZ8FRwklQGjszBHdLTmU1b07k9w"
   }
 }
