@@ -2,16 +2,16 @@
   "payload": {
     "schemaVersion": 1,
     "channel": "stable",
-    "publishedAt": "2026-08-22T08:58:00Z",
+    "publishedAt": "2026-08-22T09:29:00Z",
     "extension": {
-      "version": "0.8.75.0",
+      "version": "0.8.76.0",
       "minChrome": 120,
       "schemaVersion": 8,
       "compatibility": {
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Background Update Notice: metadata-only auto-check запускается через 2 минуты после старта и затем каждые 6 часов. Фоновый путь проверяет только signed manifest + integrity-bound asset catalog, ничего не устанавливает и не скачивает core-пакеты. При наличии новой версии popup показывает компактный banner, а в Options у раздела «Обновления» появляется индикатор. Native не менялся."
+      "releaseNotes": "Background Verified Snapshot Sync: фоновая и ручная проверка теперь сохраняют один и тот же validated snapshot signed manifest + integrity-bound asset catalog. Options сразу восстанавливает из него полноценные доступные версии/статусы без повторного ручного запроса; snapshot повторно привязывается к текущим локальным версиям, поэтому stale/no-op update plan не появляется. Popup не показывает устаревший extension-only notice после уже установленной версии. Native не менялся."
     },
     "bridge": {
       "version": "0.8.29",
@@ -20,7 +20,7 @@
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Bridge 0.8.29 и Strict Guard не менялись относительно 0.8.74.0; 0.8.75.0 — extension-only background update notification polish, переустановка Bridge/Guard не требуется."
+      "releaseNotes": "Bridge 0.8.29 и Strict Guard не менялись относительно 0.8.75.0; 0.8.76.0 — extension-only verified snapshot/UI sync, переустановка Bridge/Guard не требуется."
     },
     "xray": {
       "version": "26.7.28",
@@ -56,6 +56,6 @@
   "signature": {
     "algorithm": "ECDSA-P256-SHA256",
     "keyId": "pc-p256-71c8797b4134",
-    "value": "c9-N5wEKwcrkg68zHByyJy44HUx5AREWBeUbRSYfNFLzd0To3OvkLy0rRHMSbuDd9fFn8Ls3eYX9bXkFmAgrPw"
+    "value": "mifv0DF1tlwFTyBYIAftbPTGZogHfeD8-uhqlqO83nc8jtXwv4qNHMYAqLd3vp4j-T-3aCMB_Vke2cONC0gmiQ"
   }
 }
