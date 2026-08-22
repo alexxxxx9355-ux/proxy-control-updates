@@ -2,16 +2,16 @@
   "payload": {
     "schemaVersion": 1,
     "channel": "stable",
-    "publishedAt": "2026-08-22T12:15:00Z",
+    "publishedAt": "2026-08-22T12:24:00Z",
     "extension": {
-      "version": "0.8.78.1",
+      "version": "0.8.78.2",
       "minChrome": 120,
       "schemaVersion": 8,
       "compatibility": {
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Inline Health Profile Row: отдельная карточка Quick Health в popup удалена; существующий Health Score встроен прямо в строку выбора активного пользовательского proxy/tunnel профиля как score/100 + статус + минималистичные signal bars. Freshness сохраняется без отдельного шумного блока. Новых probes/endpoints/permissions нет. Native не менялся."
+      "releaseNotes": "Inline Health Micro-Alignment: popup inline Health cluster сдвинут немного левее от profile caret, signal bars визуально центрированы по строке, после статуса добавлен небольшой spacing. Health Score/freshness/logic unchanged. Новых probes/endpoints/permissions нет. Native не менялся."
     },
     "bridge": {
       "version": "0.8.29",
@@ -20,7 +20,7 @@
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Bridge 0.8.29 и Strict Guard не менялись относительно 0.8.78.0; 0.8.78.1 — extension-only popup Inline Health UI polish, переустановка Bridge/Guard не требуется."
+      "releaseNotes": "Bridge 0.8.29 и Strict Guard не менялись относительно 0.8.78.1; 0.8.78.2 — extension-only popup CSS micro-alignment, переустановка Bridge/Guard не требуется."
     },
     "xray": {
       "version": "26.7.28",
@@ -56,6 +56,6 @@
   "signature": {
     "algorithm": "ECDSA-P256-SHA256",
     "keyId": "pc-p256-71c8797b4134",
-    "value": "jdL6oR8eSzDNNkqY2_71A_vt_A8k0veRu54VhJiSvyFa_Gj3AOqU0RqFPUsrkMyrobblD1Q8y8wqwqwK2AIuUw"
+    "value": "g2d5l2N1XyHhFRLilGMO3BeAEyfcj8AJOmKlK-5WFGzcRPC0TVSQU7BdQQ2lNS4WVBiNNpOrnChph9fn2j-8aw"
   }
 }
