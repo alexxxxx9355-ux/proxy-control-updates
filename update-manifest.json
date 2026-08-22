@@ -2,16 +2,16 @@
   "payload": {
     "schemaVersion": 1,
     "channel": "stable",
-    "publishedAt": "2026-08-22T10:05:00Z",
+    "publishedAt": "2026-08-22T11:20:33Z",
     "extension": {
-      "version": "0.8.77.0",
+      "version": "0.8.77.1",
       "minChrome": 120,
       "schemaVersion": 8,
       "compatibility": {
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Update Control & Rollback UX: уведомления можно отложить на 1/3/7 дней или пропустить только для текущего набора версий; новая версия снова появляется автоматически. Security/critical обновления нельзя пропустить и можно отложить максимум на 1 день. Xray/sing-box/PSL сохраняют один постоянный rollback на предыдущую подтверждённо рабочую версию с ручной кнопкой «Откатить». Native не менялся."
+      "releaseNotes": "Quality History Unknown Telemetry Fix: отсутствие measurement для availability/jitter больше не превращается в ложные 0%/0 мс. Реальный измеренный ноль сохраняется; unknown показывается как «—» и разрывает линию графика. Update Control & Rollback UX 0.8.77.0 сохранён. Native не менялся."
     },
     "bridge": {
       "version": "0.8.29",
@@ -20,28 +20,28 @@
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Bridge 0.8.29 и Strict Guard не менялись относительно 0.8.76.1. 0.8.77.0 использует уже существующий Core Update rollback API; новой native-команды, нового EXE или нового native hash нет."
+      "releaseNotes": "Bridge 0.8.29 и Strict Guard не менялись относительно 0.8.77.0; 0.8.77.1 — extension-only Quality History telemetry correctness fix, переустановка Bridge/Guard не требуется."
     },
     "xray": {
       "version": "26.7.28",
       "compatibility": {
         "minBridge": "0.8.28"
       },
-      "releaseNotes": "Xray-core 26.7.28 актуален. После будущего успешного обновления предыдущая подтверждённо рабочая версия будет сохранена как единственный постоянный rollback до следующего успешного обновления."
+      "releaseNotes": "Xray-core 26.7.28 актуален. Update/rollback policy из 0.8.77.0 сохранена без изменений."
     },
     "singbox": {
       "version": "1.13.19",
       "compatibility": {
         "minBridge": "0.8.28"
       },
-      "releaseNotes": "sing-box 1.13.19 актуален. После будущего успешного обновления предыдущая подтверждённо рабочая версия будет сохранена как единственный постоянный rollback до следующего успешного обновления."
+      "releaseNotes": "sing-box 1.13.19 актуален. Update/rollback policy из 0.8.77.0 сохранена без изменений."
     },
     "psl": {
       "version": "2026.8.17",
       "compatibility": {
         "minExtension": "0.8.40"
       },
-      "releaseNotes": "PSL 2026.8.17 актуален. Update Center хранит один предыдущий проверенный PSL snapshot (или bundled fallback) для ручного rollback без срока давности."
+      "releaseNotes": "PSL 2026.8.17 актуален. Verified override/rollback policy из 0.8.77.0 сохранена без изменений."
     },
     "critical": false,
     "security": false,
@@ -56,6 +56,6 @@
   "signature": {
     "algorithm": "ECDSA-P256-SHA256",
     "keyId": "pc-p256-71c8797b4134",
-    "value": "M763utJafeR1l1GoSDXRxSR3S0ACJ_PtMoKfmzLFz9phv68NyNVPP21ay4X2eRH3A88Mmnm1yPCRCFyhu4qCKw"
+    "value": "wlHIPTLaO5A4sa0f3PFBAwUwt7hnJ-vJDndWFciuyKuAoiHcfeFxqZ-OZWlfJAfFKSL3TAx-zJt8-HotHavuFQ"
   }
 }
