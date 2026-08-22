@@ -2,53 +2,53 @@
   "payload": {
     "schemaVersion": 1,
     "channel": "stable",
-    "publishedAt": "2026-08-22T00:12:00Z",
+    "publishedAt": "2026-08-22T00:36:00Z",
     "extension": {
-      "version": "0.8.70.0",
+      "version": "0.8.71.0",
       "minChrome": 120,
       "schemaVersion": 8,
       "compatibility": {
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Упрощён Центр обновлений под one-click UX: после проверки все реальные совместимые Xray/sing-box/PSL обновления собираются под одной кнопкой «Обновить всё». Текущие версии не предлагают no-op staging; инженерная кнопка «Подготовить» убрана из обычного UI. В 0.8.70.0 bulk-flow пока выполняет безопасный verify/content-policy/staging preflight без активной замены компонентов."
+      "releaseNotes": "Включён Controlled One-Click Install: «Обновить всё» реально устанавливает более новые совместимые Xray/sing-box/PSL. Core update проходит через Bridge transaction API: official URL + SHA-256 + staging/self-test + stop/fail-closed + atomic commit + post-start self-test + rollback. PSL хранится как проверенный локальный override. Bridge/Strict Guard не входят в bulk-update."
     },
     "bridge": {
-      "version": "0.8.28",
+      "version": "0.8.29",
       "compatibility": {
         "minExtension": "0.8.64.2",
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Bridge 0.8.28 и Strict Guard не менялись; one-click UX foundation не обновляет native и не требует переустановки."
+      "releaseNotes": "Bridge 0.8.29 добавляет только Core Update API для Xray/sing-box с prepare/commit/self-test/rollback/finalize. Strict Guard protocol/rules/helper не менялись; существующий Guard helper при переустановке Bridge сохраняется."
     },
     "xray": {
       "version": "26.7.28",
       "compatibility": {
         "minBridge": "0.8.28"
       },
-      "releaseNotes": "Xray-core 26.7.28 актуален. При появлении более новой совместимой версии она попадёт в общий one-click update plan; no-op для уже установленной версии запрещён."
+      "releaseNotes": "Xray-core 26.7.28 актуален. Более новые пакеты допускаются к one-click install только если asset catalog подтверждает совместимость с Bridge 0.8.29+."
     },
     "singbox": {
       "version": "1.13.19",
       "compatibility": {
         "minBridge": "0.8.28"
       },
-      "releaseNotes": "sing-box 1.13.19 актуален. При появлении более новой совместимой версии она попадёт в общий one-click update plan; no-op для уже установленной версии запрещён."
+      "releaseNotes": "sing-box 1.13.19 актуален. Более новые пакеты допускаются к one-click install только если asset catalog подтверждает совместимость с Bridge 0.8.29+."
     },
     "psl": {
       "version": "2026.8.17",
       "compatibility": {
         "minExtension": "0.8.40"
       },
-      "releaseNotes": "PSL 2026.8.17 актуален. При появлении более новой совместимой версии она попадёт в общий one-click update plan; текущая версия не предлагает лишних действий."
+      "releaseNotes": "PSL 2026.8.17 актуален. Более новый signed/catalog-verified PSL устанавливается как локальный проверенный override; bundled snapshot остаётся fallback."
     },
     "critical": false,
     "security": false,
     "assets": {
       "windows-x64": {
         "url": "https://api.github.com/repos/alexxxxx9355-ux/proxy-control-updates/contents/asset-catalog-windows-x64.json?ref=main",
-        "sha256": "0065674f5def5483263351dc35c27bff00846250b0d67793d1d502c008dd34c7",
+        "sha256": "4f4abbfe9d9ca1e3eb9c910be9139f9af8af94cbbf850be0974025efaa66ae97",
         "size": 1260
       }
     }
@@ -56,6 +56,6 @@
   "signature": {
     "algorithm": "ECDSA-P256-SHA256",
     "keyId": "pc-p256-71c8797b4134",
-    "value": "ACXYG30HZss15EP--fSphRa4ld9lM7S89T4IvqdhgPeAkcikEo6YuWVFDl1CGx35AUJ6SYT9-JRH5ygOw_vPAw"
+    "value": "ISXF8LCNfNV_UrVXjSMf6l7U_AlDEAN3onihCyX8DpPc0YV7N2FinyHwZXkcGkRX-p6iaQ04Em2_WJ40OJb87Q"
   }
 }
