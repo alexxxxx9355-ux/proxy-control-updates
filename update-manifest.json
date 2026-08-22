@@ -2,16 +2,16 @@
   "payload": {
     "schemaVersion": 1,
     "channel": "stable",
-    "publishedAt": "2026-08-22T12:24:00Z",
+    "publishedAt": "2026-08-22T12:37:13Z",
     "extension": {
-      "version": "0.8.78.2",
+      "version": "0.8.78.3",
       "minChrome": 120,
       "schemaVersion": 8,
       "compatibility": {
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Inline Health Micro-Alignment: popup inline Health cluster сдвинут немного левее от profile caret, signal bars визуально центрированы по строке, после статуса добавлен небольшой spacing. Health Score/freshness/logic unchanged. Новых probes/endpoints/permissions нет. Native не менялся."
+      "releaseNotes": "Inline Health Final Alignment: весь popup inline Health cluster сдвинут заметно левее к имени профиля; signal bars и dropdown caret визуально выровнены по вертикальному центру; между статусом и bars увеличен spacing. Health Score/freshness/logic unchanged. Новых probes/endpoints/permissions нет. Native не менялся."
     },
     "bridge": {
       "version": "0.8.29",
@@ -20,7 +20,7 @@
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Bridge 0.8.29 и Strict Guard не менялись относительно 0.8.78.1; 0.8.78.2 — extension-only popup CSS micro-alignment, переустановка Bridge/Guard не требуется."
+      "releaseNotes": "Bridge 0.8.29 и Strict Guard не менялись относительно 0.8.78.2; 0.8.78.3 — extension-only popup CSS final alignment, переустановка Bridge/Guard не требуется."
     },
     "xray": {
       "version": "26.7.28",
@@ -56,6 +56,6 @@
   "signature": {
     "algorithm": "ECDSA-P256-SHA256",
     "keyId": "pc-p256-71c8797b4134",
-    "value": "g2d5l2N1XyHhFRLilGMO3BeAEyfcj8AJOmKlK-5WFGzcRPC0TVSQU7BdQQ2lNS4WVBiNNpOrnChph9fn2j-8aw"
+    "value": "argYTPJMy6yT8WWWgJ1sAUgjKDeYzepVwdb71CF5OhbKgsD-zmRSMeISiZdbZpR-YPAWRv7o7N_5yYjnPfl6Lw"
   }
 }
