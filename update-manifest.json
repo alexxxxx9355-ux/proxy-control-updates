@@ -2,16 +2,16 @@
   "payload": {
     "schemaVersion": 1,
     "channel": "stable",
-    "publishedAt": "2026-08-22T11:20:33Z",
+    "publishedAt": "2026-08-22T11:35:30Z",
     "extension": {
-      "version": "0.8.77.1",
+      "version": "0.8.78.0",
       "minChrome": 120,
       "schemaVersion": 8,
       "compatibility": {
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Quality History Unknown Telemetry Fix: отсутствие measurement для availability/jitter больше не превращается в ложные 0%/0 мс. Реальный измеренный ноль сохраняется; unknown показывается как «—» и разрывает линию графика. Update Control & Rollback UX 0.8.77.0 сохранён. Native не менялся."
+      "releaseNotes": "Quick Health Popup: существующий Proxy Health Score теперь компактно показывается в popup для активного пользовательского proxy/tunnel профиля — score/status/freshness + availability/outage summary; клик открывает «История качества». Данные старше 24 часов явно помечаются устаревшими. Новых probes/endpoints/permissions нет. Native не менялся."
     },
     "bridge": {
       "version": "0.8.29",
@@ -20,7 +20,7 @@
         "minSchema": 8,
         "maxSchema": 8
       },
-      "releaseNotes": "Bridge 0.8.29 и Strict Guard не менялись относительно 0.8.77.0; 0.8.77.1 — extension-only Quality History telemetry correctness fix, переустановка Bridge/Guard не требуется."
+      "releaseNotes": "Bridge 0.8.29 и Strict Guard не менялись относительно 0.8.77.1; 0.8.78.0 — extension-only Quick Health UI/freshness release, переустановка Bridge/Guard не требуется."
     },
     "xray": {
       "version": "26.7.28",
@@ -56,6 +56,6 @@
   "signature": {
     "algorithm": "ECDSA-P256-SHA256",
     "keyId": "pc-p256-71c8797b4134",
-    "value": "wlHIPTLaO5A4sa0f3PFBAwUwt7hnJ-vJDndWFciuyKuAoiHcfeFxqZ-OZWlfJAfFKSL3TAx-zJt8-HotHavuFQ"
+    "value": "1WuvJqT9H_qC0_JWtba77CD-xH_UNtaBuv-mfxVG9kLyaqNDtAoPTOZM9-nBqar8dsRWc6G-FL8GTztmQjQXzw"
   }
 }
